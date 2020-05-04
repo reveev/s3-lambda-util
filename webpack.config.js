@@ -9,6 +9,10 @@ module.exports = {
   },
   target: 'node',
   externals: [{ "aws-sdk": "commonjs aws-sdk" }],
+  optimization: {
+    minimize: false,
+  },
+  devtool: 'inline-cheap-module-source-map',
   module: {
     rules: [
       {
