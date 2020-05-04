@@ -108,7 +108,7 @@ function S3LambdaUtil(workingDir) {
     downloadDirFromBucket,
     uploadDirToBucket,
     uploadFileToBucket
-  }
+  };
 }
 
-export default S3LambdaUtil;
+export { S3LambdaUtil };
