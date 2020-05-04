@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    library: 'reveev-s3-lambda-util',
+    library: 'S3LambdaUtil',
     libraryTarget: 'commonjs2'
   },
   target: 'node',
