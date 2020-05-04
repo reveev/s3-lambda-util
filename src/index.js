@@ -9,7 +9,7 @@ import { createBaseDirs } from './fs-util';
 
 const s3 = new AWS.S3();
 
-function s3Util(workingDir) {
+function S3Util(workingDir) {
 
   async function listBucketObjects(bucketName, prefix) {
     const s3Params = {
@@ -111,4 +111,4 @@ function s3Util(workingDir) {
   }
 }
 
-export default s3Util;
+export default S3Util;
