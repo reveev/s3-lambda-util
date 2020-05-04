@@ -1,4 +1,4 @@
-module.exports =
+var S3LambdaUtil =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

@@ -6,8 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    library: 'S3LambdaUtil',
-    libraryTarget: 'commonjs2'
+    library: 'S3LambdaUtil'
   },
   target: 'node',
   externals: [{ "aws-sdk": "commonjs aws-sdk" }],
