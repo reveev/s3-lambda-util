@@ -1,7 +1,7 @@
 {
   "name": "reveev-s3-lambda-util",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/S3LambdaUtil.js",
   "license": "MIT",
   "scripts": {
     "build": "webpack"

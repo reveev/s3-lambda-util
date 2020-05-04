@@ -5,8 +5,10 @@ module.exports = {
   entry: { main: "./src/index.js" },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.js",
-    library: 'S3LambdaUtil'
+    filename: "S3LambdaUtil.js",
+    library: 'S3LambdaUtil',
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
   target: 'node',
   externals: [{ "aws-sdk": "commonjs aws-sdk" }],
