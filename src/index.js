@@ -5,6 +5,7 @@
 
 import AWS from 'aws-sdk';
 import fs from 'fs';
+import path from 'path';
 import { createBaseDirs } from './fs-util';
 
 const s3 = new AWS.S3();
