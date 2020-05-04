@@ -5,7 +5,9 @@ module.exports = {
   entry: { main: "./src/index.js" },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.js"
+    filename: "index.js",
+    library: 'reveev-s3-lambda-util',
+    libraryTarget: 'commonjs2'
   },
   target: 'node',
   externals: [{ "aws-sdk": "commonjs aws-sdk" }],
