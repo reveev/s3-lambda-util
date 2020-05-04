@@ -4,11 +4,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: { main: "./src/index.js" },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "S3LambdaUtil.js",
+    path: path.resolve(__dirname, "lib"),
+    filename: "s3-lambda-util.js",
     library: 'S3LambdaUtil',
     libraryTarget: 'umd',
-    globalObject: 'this'
+    umdNamedDefine: true
   },
   target: 'node',
   externals: [{ "aws-sdk": "commonjs aws-sdk" }],
@@ -39,7 +39,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['dist']
+      cleanOnceBeforeBuildPatterns: ['lib']
     })
   ]
 }
